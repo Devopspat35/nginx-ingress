@@ -69,7 +69,8 @@ $ kubectl get pods --namespace=nginx-ingress
 
 **For AWS, run:**
 ```
-$ kubectl apply -f service/loadbalancer-aws-elb.yaml
+kubectl apply -f service/loadbalancer.yaml
+
 ```
 
 To get the DNS name of the ELB, run:
