@@ -60,6 +60,9 @@ Check that the Ingress Controller is Running
 Run the following command to make sure that the Ingress controller pods are running:
 ```
  kubectl get pods --namespace=nginx-ingress
+
+#OR
+kubectl get pods --n nginx-ingress
 ```
 
 ## 6. Get Access to the Ingress Controller
