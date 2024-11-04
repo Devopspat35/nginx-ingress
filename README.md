@@ -21,19 +21,19 @@ In the case of NGINX, the Ingress controller is deployed in a pod along with the
 ## 1. Clone Kubernetes Nginx Ingress Manifests into server where you have kubectl
 
 ```
-$ git clone https://github.com/LandmakTechnology/nginx-ingress
+ git clone https://github.com/LandmakTechnology/nginx-ingress
 
-$ cd nginx-ingress/deployments
+ cd nginx-ingress/deployments
 ```
 ## 2. Create a Namespace And SA
 
 ```
- $ kubectl apply -f common/ns-and-sa.yaml
+  kubectl apply -f common/ns-and-sa.yaml
 ```
 ## 3. Create RBAC, Default Secret And Config Map
 
 ```
- $ kubectl apply -f common/
+  kubectl apply -f common/
 ```
 
 ## 4. Deploy the Ingress Controller
@@ -47,7 +47,7 @@ We include two options for deploying the Ingress controller:
 When you run the Ingress Controller by using a DaemonSet, Kubernetes will create an Ingress controller pod on every node of the cluster.
 
 ```
- $ kubectl apply -f daemon-set/nginx-ingress.yaml
+  kubectl apply -f daemon-set/nginx-ingress.yaml
  ```
 
 ## 5. Check that the Ingress Controller is Running
@@ -55,7 +55,7 @@ When you run the Ingress Controller by using a DaemonSet, Kubernetes will create
 Check that the Ingress Controller is Running
 Run the following command to make sure that the Ingress controller pods are running:
 ```
-$ kubectl get pods --namespace=nginx-ingress
+ kubectl get pods --namespace=nginx-ingress
 ```
 
 ## 6. Get Access to the Ingress Controller
@@ -86,7 +86,7 @@ kubectl get svc -n nginx-ingress
 
 You can resolve the DNS name into an IP address using `nslookup`:
 ```
-$ nslookup <dns-name>
+ nslookup <dns-name>
 ```
 
 
