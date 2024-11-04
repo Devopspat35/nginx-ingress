@@ -47,9 +47,9 @@ We include two options for deploying the Ingress controller:
 When you run the Ingress Controller by using a DaemonSet, Kubernetes will create an Ingress controller pod on every node of the cluster.
 
 ```
-  kubectl apply -f daemon-set/nginx-ingress.yaml
-OR:
-Create a deployment:
+  #kubectl apply -f daemon-set/nginx-ingress.yaml
+
+    #OR Create a deployment:
 
    kubectl apply -f deployment/
  ```
