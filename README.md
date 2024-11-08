@@ -74,7 +74,7 @@ Run the following command to make sure that the Ingress controller pods are runn
 
 **For AWS, run:**
 ```
-kubectl apply -f service/loadbalancer.yaml
+ kubectl apply -f service/loadbalancer-aws-elb.yaml
 
 ```
 
